@@ -14,6 +14,7 @@ The algorithm comprises two main steps:
 
 ## Theoretical Analysis (To be completed in the future; the following outlines the basic concept):
 Objective: To establish that the edges encompassed within the flight subset $H_{opt}$ are also part of the optimal solution.
+
 Proof Sketch: Utilizing a proof by contradiction, let us assume that for vertices $v_1$ and $v_2$, edge $e_1$ exists in $H_{opt}$ while edge $e_2$ exists in $H_{opt_solution}$. We will demonstrate the validity of this assumption based on the following three points:
 - $e_1 = e_2$: This can be deduced by employing the method of selecting the minimum loop.
 - $e_1$ does not exist while $e_2$ exists: This can be deduced by employing the method of selecting the minimum loop.
