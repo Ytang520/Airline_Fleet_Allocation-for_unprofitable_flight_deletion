@@ -1,9 +1,9 @@
 
-Key takeways:
+## Key takeways:
 - The improved algorithm focuses on pruning flight loops rather than optimizing for maximum profits. The intuition comes from the fact that when two vertices lack a direct connection within the optimal solution, there must exist ideal flight loops that can connect them.
 - The algorithm initiates with a greedy strategy, where the flight subset $H_{opt}$ is derived by intersecting both the profitable (also positive) flight loop subset and the subset obtained by removing unprofitable (also negative) flight loops. Both subsets are acquired through a greedy approach. We can substantiate that the edges within this flight subset $H_{opt}$ are also present in the optimal solution. Consequently, we can streamline the graph's edges using this technique and employ dynamic optimization to ascertain the optimal solution.
 
-**Note:**
+## Note:
 - The current code does not precisely align with this concept, and I will address these improvements in the future.
 - For readers, I recommend utilizing the ```flight-loop_gurobi.py``` script for small-scale datasets, as I have not yet fine-tuned the enhanced Dijkstra algorithm for speed.
 
